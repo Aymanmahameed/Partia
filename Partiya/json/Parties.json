@@ -1,0 +1,71 @@
+{
+	"Parties_info": [
+		{
+			"partyId": "800",
+			"partyName": "gogo",
+			"street": "hashmonaem",
+			"buildingNumber": "8",
+			"city": "Tel Aviv",
+			"district": "TEL_AVIV",
+			"startDate": "5/14/2023",
+			"endDate": "5/14/2023",
+			"ManagerID":"44",
+			"Locations_info": [
+				{
+					"LocationName": "Z",
+					"TicketPrice": "555",
+					"Size": "300",
+					"MaxTickets": "200",
+					"MaxParticipant": "140"
+				},
+				{
+					"LocationName": "H",
+					"TicketPrice": "555",
+					"Size": "300",
+					"MaxTickets": "200",
+					"MaxParticipant": "140",
+					"MusicType": "Pop",
+					"Artist_info": [
+						{
+							
+							"ArtistID":"22",
+							"FirstName":"moshe",
+							"LastName":"peretz",
+							"popularity":"6"						
+						},
+						{
+							"ArtistID":"26",
+							"FirstName":"yossi",
+							"LastName":"alek",
+							"popularity":"6"
+						}
+					]
+				}
+			]
+		},
+		{
+			"partyId": "801",
+			"partyName": "gogo",
+			"street": "hashmonaem",
+			"buildingNumber": "8",
+			"city": "Tel Aviv",
+			"district": "TEL_AVIV",
+			"startDate": "5/14/2023",
+			"endDate": "5/14/2023",
+			"ManagerID":"48",
+			"Locations_info": []
+		},
+		{
+			"partyId": "807",
+			"partyName": "nora",
+			"street": "hashmonaem",
+			"buildingNumber": "8",
+			"city": "Tel Aviv",
+			"district": "TEL_AVIV",
+			"startDate": "5/14/2023",
+			"endDate": "5/14/2023",
+			"ManagerID":"48",
+			"Locations_info": []
+		}
+	]
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Participant_info exportDate="2023-07-03T07:41:32.925">
+  <Participant ParticipantID="2">
+    <PartyNum>20</PartyNum>
+    <PhoneNum>04567643</PhoneNum>
+    <StartDate>2023-05-23 00:00:00.000000</StartDate>
+    <EndDate>2023-05-25 00:00:00.000000</EndDate>
+  </Participant>
+  <Participant ParticipantID="3">
+    <PartyNum>23</PartyNum>
+    <PhoneNum>04567643</PhoneNum>
+    <StartDate>2023-04-10 00:00:00.000000</StartDate>
+    <EndDate>2023-04-11 00:00:00.000000</EndDate>
+  </Participant>
+  <Participant ParticipantID="4">
+    <PartyNum>12</PartyNum>
+    <PhoneNum>050335678</PhoneNum>
+    <StartDate>2023-03-31 00:00:00.000000</StartDate>
+    <EndDate>2023-04-02 00:00:00.000000</EndDate>
+  </Participant>
+  <Participant ParticipantID="5">
+    <PartyNum>20</PartyNum>
+    <PhoneNum>056678432</PhoneNum>
+    <StartDate>2022-05-23 00:00:00.000000</StartDate>
+    <EndDate>2022-05-25 00:00:00.000000</EndDate>
+  </Participant>
+  <Participant ParticipantID="6">
+    <PartyNum>20</PartyNum>
+    <PhoneNum>056895432</PhoneNum>
+    <StartDate>2023-03-31 00:00:00.000000</StartDate>
+    <EndDate>2023-04-02 00:00:00.000000</EndDate>
+  </Participant>
+  <Participant ParticipantID="7">
+    <PartyNum>20</PartyNum>
+    <PhoneNum>056895432</PhoneNum>
+    <StartDate>2023-03-31 00:00:00.000000</StartDate>
+    <EndDate>2023-04-02 00:00:00.000000</EndDate>
+  </Participant>
+  <Participant ParticipantID="1">
+    <PartyNum>34</PartyNum>
+    <PhoneNum>1</PhoneNum>
+    <StartDate>2023-04-22 00:00:00.000000</StartDate>
+    <EndDate>2023-04-28 00:00:00.000000</EndDate>
+  </Participant>
+  <Participant ParticipantID="8">
+    <PartyNum>807</PartyNum>
+    <PhoneNum>1</PhoneNum>
+    <StartDate>2023-07-06 00:00:00.000000</StartDate>
+    <EndDate>2023-07-06 00:00:00.000000</EndDate>
+  </Participant>
+  <Participant ParticipantID="9">
+    <PartyNum>807</PartyNum>
+    <PhoneNum>1</PhoneNum>
+    <StartDate>2023-07-06 00:00:00.000000</StartDate>
+    <EndDate>2023-07-06 00:00:00.000000</EndDate>
+  </Participant>
+</Participant_info>
