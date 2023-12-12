@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MusicianReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6d30a01e-bb65-422e-a794-f8a9bcce9970">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="UCA2"/>
+	<parameter name="id" class="java.lang.Long"/>
+	<parameter name="d" class="java.sql.Date"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT party.city_name, party.District, Occurs_in.Date, Occurs_in.start_our, Occurs_in.end_hour, Perform_in.price
+FROM (musician INNER JOIN Perform_in ON musician.musician_id = Perform_in.musician_id) INNER JOIN (party INNER JOIN (((Area INNER JOIN Concert_Area ON Area.area_name = Concert_Area.area_name) INNER JOIN Part_of ON Area.area_name = Part_of.area_name) INNER JOIN Occurs_in ON Concert_Area.area_name = Occurs_in.area_name) ON party.party_id = Part_of.party_id) ON (Perform_in.musician_id = Occurs_in.musician_id) AND (Perform_in.concert_id = Occurs_in.concert_id)
+WHERE (( (  (Occurs_in.Date)>=$P{d} And (Occurs_in.Date)<=DateAdd('d',7,$P{d}) ) And (musician.musician_id)=$P{id}))
+GROUP BY party.city_name, party.District, Occurs_in.Date, Occurs_in.start_our, Occurs_in.end_hour, Perform_in.price
+ORDER BY Occurs_in.Date]]>
+	</queryString>
+	<field name="CITY_NAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CITY_NAME"/>
+		<property name="com.jaspersoft.studio.field.label" value="CITY_NAME"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SYSTEM_SUBQUERY"/>
+	</field>
+	<field name="DISTRICT" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="DISTRICT"/>
+		<property name="com.jaspersoft.studio.field.label" value="DISTRICT"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SYSTEM_SUBQUERY"/>
+	</field>
+	<field name="DATE" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="DATE"/>
+		<property name="com.jaspersoft.studio.field.label" value="DATE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SYSTEM_SUBQUERY"/>
+	</field>
+	<field name="START_OUR" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="START_OUR"/>
+		<property name="com.jaspersoft.studio.field.label" value="START_OUR"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SYSTEM_SUBQUERY"/>
+	</field>
+	<field name="END_HOUR" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="END_HOUR"/>
+		<property name="com.jaspersoft.studio.field.label" value="END_HOUR"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SYSTEM_SUBQUERY"/>
+	</field>
+	<field name="Price" class="java.lang.String"/>
+	<group name="CITY_NAME">
+		<groupExpression><![CDATA[$F{CITY_NAME}]]></groupExpression>
+	</group>
+	<group name="DISTRICT">
+		<groupExpression><![CDATA[$F{DISTRICT}]]></groupExpression>
+	</group>
+	<group name="DATE">
+		<groupExpression><![CDATA[$F{DATE}]]></groupExpression>
+	</group>
+	<group name="START_OUR">
+		<groupExpression><![CDATA[$F{START_OUR}]]></groupExpression>
+	</group>
+	<group name="END_HOUR">
+		<groupExpression><![CDATA[$F{END_HOUR}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="121" splitType="Stretch">
+			<textField>
+				<reportElement x="-10" y="30" width="90" height="30" uuid="528fd1a0-6d2c-4f14-91c6-b35151631339"/>
+				<textFieldExpression><![CDATA[$F{CITY_NAME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-10" y="10" width="100" height="30" uuid="1761f9ad-0aa2-4ef0-be23-1970317b4fcf"/>
+				<text><![CDATA[CITY_NAME]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="70" y="30" width="100" height="30" uuid="dc87a510-c237-482d-afdf-64fd3d1137ef"/>
+				<textFieldExpression><![CDATA[$F{DISTRICT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="70" y="10" width="100" height="30" uuid="97806255-7695-4beb-b210-9e539325cbd7"/>
+				<text><![CDATA[DISTRICT]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="30" width="100" height="30" uuid="2a0ff998-8ec0-4f9b-a6be-05c61144fb56"/>
+				<textFieldExpression><![CDATA[$F{DATE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="160" y="10" width="100" height="30" uuid="7c5ce81b-ba93-4552-9ac1-b304aff5ce2f"/>
+				<text><![CDATA[DATE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="250" y="30" width="100" height="30" uuid="e20550c7-61f8-4af8-a0b9-f93daf3ebd3a"/>
+				<textFieldExpression><![CDATA[$F{START_OUR}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="250" y="10" width="100" height="30" uuid="9deb81a9-f40f-4806-989e-a189da31a5cc"/>
+				<text><![CDATA[START_OUR]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="350" y="30" width="100" height="30" uuid="8f9fec30-90f6-4d20-be3b-113b7b11be17"/>
+				<textFieldExpression><![CDATA[$F{END_HOUR}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="350" y="10" width="100" height="30" uuid="ad68cf96-5b3b-4f69-9021-0e4cbe598578"/>
+				<text><![CDATA[END_HOUR]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="450" y="30" width="100" height="30" uuid="9bf79587-cb15-4e7d-a6cf-fb379b33ba89"/>
+				<textFieldExpression><![CDATA[$F{Price}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="450" y="10" width="100" height="30" uuid="1bddb130-88e1-44a7-8886-2a72461f3c6f"/>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

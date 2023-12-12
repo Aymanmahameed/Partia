@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ByDateReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2ee5e45f-a7e7-4c71-adb7-c9b42ef758e8">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="UCA1"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="374"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="619"/>
+	<parameter name="d1" class="java.sql.Date"/>
+	<parameter name="d2" class="java.sql.Date"/>
+	<parameter name="id" class="java.lang.Long"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT party.District, party.city_name, party.city_code, party.Street, party.building_number, Occurs_in.Date, Count(Perform_in.musician_id) AS NumOfMusiciansPerAgent, Query1.NumofMusiciansinConcert, Count([Perform_in].[musician_id])/[Query1].[NumofMusiciansinConcert]*100-Count([Perform_in].[musician_id])/[Query1].[NumofMusiciansinConcert] AS per
+FROM ((musician INNER JOIN (Concert INNER JOIN (Perform_in INNER JOIN Query1 ON Perform_in.concert_id = Query1.concert_id) ON Concert.concert_id = Perform_in.concert_id) ON musician.musician_id = Perform_in.musician_id) INNER JOIN (Agent INNER JOIN represented_by ON Agent.agent_id = represented_by.agent_id) ON musician.musician_id = represented_by.musician_id) INNER JOIN (party INNER JOIN ((Concert_Area INNER JOIN Part_of ON Concert_Area.area_name = Part_of.area_name) INNER JOIN Occurs_in ON Concert_Area.area_name = Occurs_in.area_name) ON party.party_id = Part_of.party_id) ON (Perform_in.musician_id = Occurs_in.musician_id) AND (Perform_in.concert_id = Occurs_in.concert_id)
+WHERE (((Occurs_in.Date) Between $P{d1} And $P{d2}) AND ((represented_by.agent_id)=$P{id}))
+GROUP BY party.District, party.city_name, party.city_code, party.Street, party.building_number, Occurs_in.Date, Query1.NumofMusiciansinConcert, Concert.concert_id]]>
+	</queryString>
+	<field name="DISTRICT" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="DISTRICT"/>
+		<property name="com.jaspersoft.studio.field.label" value="DISTRICT"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SYSTEM_SUBQUERY"/>
+	</field>
+	<field name="CITY_NAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CITY_NAME"/>
+		<property name="com.jaspersoft.studio.field.label" value="CITY_NAME"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SYSTEM_SUBQUERY"/>
+	</field>
+	<field name="CITY_CODE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CITY_CODE"/>
+		<property name="com.jaspersoft.studio.field.label" value="CITY_CODE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SYSTEM_SUBQUERY"/>
+	</field>
+	<field name="STREET" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="STREET"/>
+		<property name="com.jaspersoft.studio.field.label" value="STREET"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SYSTEM_SUBQUERY"/>
+	</field>
+	<field name="BUILDING_NUMBER" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="BUILDING_NUMBER"/>
+		<property name="com.jaspersoft.studio.field.label" value="BUILDING_NUMBER"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SYSTEM_SUBQUERY"/>
+	</field>
+	<field name="DATE" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="DATE"/>
+		<property name="com.jaspersoft.studio.field.label" value="DATE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SYSTEM_SUBQUERY"/>
+	</field>
+	<field name="NumOfMusiciansPerAgent" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="NUMOFMUSICIANSPERAGENT"/>
+		<property name="com.jaspersoft.studio.field.label" value="NumOfMusiciansPerAgent"/>
+	</field>
+	<field name="NumofMusiciansinConcert" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="NumofMusiciansinConcert"/>
+		<property name="com.jaspersoft.studio.field.label" value="NumofMusiciansinConcert"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SYSTEM_SUBQUERY"/>
+	</field>
+	<field name="per" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="PER"/>
+		<property name="com.jaspersoft.studio.field.label" value="per"/>
+	</field>
+	<variable name="per_SUM" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{per}]]></variableExpression>
+	</variable>
+	<group name="DISTRICT">
+		<groupExpression><![CDATA[$F{DISTRICT}]]></groupExpression>
+	</group>
+	<group name="CITY_NAME">
+		<groupExpression><![CDATA[$F{CITY_NAME}]]></groupExpression>
+	</group>
+	<group name="CITY_CODE">
+		<groupExpression><![CDATA[$F{CITY_CODE}]]></groupExpression>
+	</group>
+	<group name="STREET">
+		<groupExpression><![CDATA[$F{STREET}]]></groupExpression>
+	</group>
+	<group name="BUILDING_NUMBER">
+		<groupExpression><![CDATA[$F{BUILDING_NUMBER}]]></groupExpression>
+	</group>
+	<group name="DATE">
+		<groupExpression><![CDATA[$F{DATE}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="341" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="20" width="100" height="30" uuid="4e419f4f-188e-42bb-aa9c-a4d11466e7ee"/>
+				<textFieldExpression><![CDATA[$F{DISTRICT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="30" uuid="31792141-0f9a-40bd-b6b5-0fc8d1e8ea26"/>
+				<text><![CDATA[DISTRICT]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="20" width="100" height="30" uuid="6df114c8-68ab-4fb3-8501-d859e29de8f8"/>
+				<textFieldExpression><![CDATA[$F{CITY_NAME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="100" y="0" width="100" height="30" uuid="962eea4b-c5d4-4935-a8ed-0a0c09547675"/>
+				<text><![CDATA[CITY_NAME]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="200" y="20" width="100" height="30" uuid="ae932b91-fcd8-4369-938f-b340813e3d13"/>
+				<textFieldExpression><![CDATA[$F{CITY_CODE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="200" y="0" width="100" height="30" uuid="7f0e25ef-fa98-43e1-b071-6dbf03764242"/>
+				<text><![CDATA[CITY_CODE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="290" y="20" width="100" height="30" uuid="4bea5982-bbb3-45b1-82bc-25b87d913a5d"/>
+				<textFieldExpression><![CDATA[$F{STREET}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="290" y="0" width="100" height="30" uuid="a52bdf83-bd03-41fd-82ce-5b4afac30b49"/>
+				<text><![CDATA[STREET]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="380" y="20" width="100" height="30" uuid="1e087c5c-548f-4c72-a9f6-7984fd1515e8"/>
+				<textFieldExpression><![CDATA[$F{BUILDING_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="380" y="0" width="100" height="30" uuid="eb1cfd3f-88e4-4e59-b818-5b41d5f5361e"/>
+				<text><![CDATA[BUILDING_NUMBER]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="480" y="30" width="100" height="30" uuid="4dee9c12-c4c7-4c7c-84b0-19e65dbc0b22"/>
+				<textFieldExpression><![CDATA[$F{DATE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="480" y="0" width="100" height="30" uuid="8b69a735-3e28-4e98-b9cf-8aefb9a924ac"/>
+				<text><![CDATA[DATE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="390" y="160" width="100" height="30" uuid="96ebfb7d-10f2-4618-b3a1-4841e38cba69"/>
+				<textFieldExpression><![CDATA[$F{NumOfMusiciansPerAgent}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="390" y="130" width="100" height="30" uuid="6dc8ec0b-94fd-42ac-bc8d-50fe7f5bd0ea"/>
+				<text><![CDATA[NumOfMusiciansPerAgent]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="160" width="100" height="30" uuid="9de484ff-b3a6-4c2f-a202-10561b9b843f"/>
+				<textFieldExpression><![CDATA[$F{NumofMusiciansinConcert}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="260" y="130" width="100" height="30" uuid="f548eff6-1317-4776-9cde-f7a7f284cadf"/>
+				<text><![CDATA[NumofMusiciansinConcert]]></text>
+			</staticText>
+			<textField evaluationTime="Auto" pattern="#,##0.00%">
+				<reportElement x="80" y="150" width="100" height="30" uuid="13939041-635c-4497-aa58-f996a886ea34"/>
+				<textFieldExpression><![CDATA[$F{DISTRICT}.valueOf( $F{NumOfMusiciansPerAgent} /$F{NumofMusiciansinConcert})]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
