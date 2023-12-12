@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-16">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="SimTimeSelector_r23.jar"/>
+	<classpathentry kind="lib" path="jgoodies-common-1.8.0.jar"/>
+	<classpathentry kind="lib" path="lib/poi-4.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/poi-examples-4.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/poi-excelant-4.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-4.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-schemas-4.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/poi-scratchpad-4.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx.base.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx.controls.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx.fxml.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx.graphics.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx.media.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx.swing.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx.web.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx-swt.jar"/>
+	<classpathentry kind="lib" path="C:/Users/aiman/git/repository4/HRS_1/jcalendar-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/aiman/git/repository4/HRS_1/jgoodies-common-1.8.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/aiman/git/repository4/HRS_1/SimTimeSelector_r23.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

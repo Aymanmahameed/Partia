@@ -1,0 +1,445 @@
+	The number of people in the room is either below or above the allowable range
+successfully added StandardRoom StandardRoom2
+	The number of people in the room is either below or above the allowable range
+successfully added SuperiorRoom SuperiorRoom4
+successfully added SuperiorRoom SuperiorRoom5
+successfully added SuperiorRoom SuperiorRoom6
+successfully added SuperiorRoom SuperiorRoom7
+successfully added Suite Suite8
+successfully added Suite Suite9
+successfully added Suite Suite10
+successfully added Suite Suite11
+successfully added Suite Suite12
+successfully added Suite Suite13
+successfully added Suite Suite14
+successfully added StandardRoom StandardRoom15
+successfully added StandardRoom StandardRoom16
+successfully added StandardRoom StandardRoom17
+successfully added SuperiorRoom SuperiorRoom18
+successfully added SuperiorRoom SuperiorRoom19
+	The number of people in the room is either below or above the allowable range
+	The number of people in the room is either below or above the allowable range
+successfully added Suite Suite22
+successfully added Suite Suite23
+successfully added Suite Suite24
+successfully added Suite Suite25
+successfully added Suite Suite26
+successfully added Suite Suite27
+successfully added Suite Suite28
+successfully added Suite Suite29
+successfully added Suite Suite30
+successfully added Suite Suite31
+successfully added Suite Suite32
+successfully added StandardRoom StandardRoom33
+successfully added StandardRoom StandardRoom34
+successfully added StandardRoom StandardRoom35
+successfully added SuperiorRoom SuperiorRoom36
+successfully added SuperiorRoom SuperiorRoom37
+	The number of people in the room is either below or above the allowable range
+	The number of people in the room is either below or above the allowable range
+successfully added StandardRoom StandardRoom40
+successfully added StandardRoom StandardRoom41
+	The number of people in the room is either below or above the allowable range
+successfully added SuperiorRoom SuperiorRoom43
+	The number of people in the room is either below or above the allowable range
+successfully added SuperiorRoom SuperiorRoom45
+	The number of people in the room is either below or above the allowable range
+successfully added StandardRoom StandardRoom47
+successfully added StandardRoom StandardRoom48
+successfully added StandardRoom StandardRoom49
+	The number of people in the room is either below or above the allowable range
+successfully added StandardRoom StandardRoom51
+successfully added Customer 1
+successfully added Customer 2
+successfully added Customer 3
+successfully added Customer 4
+successfully added Customer 5
+successfully added Customer 6
+successfully added Customer 7
+successfully added Customer 8
+successfully added Customer 9
+successfully added Customer 10
+successfully added VIPCustomer 11
+successfully added VIPCustomer 12
+successfully added VIPCustomer 13
+successfully added VIPCustomer 14
+successfully added VIPCustomer 15
+successfully added VIPCustomer 16
+successfully added VIPCustomer 17
+successfully added VIPCustomer 18
+successfully added VIPCustomer 19
+successfully added VIPCustomer 20
+successfully added Department 1
+successfully added Department 2
+successfully added Department 3
+successfully added Department 4
+successfully added Department 5
+successfully added Employee 21
+successfully added Employee 22
+successfully added Employee 23
+successfully added Employee 24
+successfully added Employee 25
+successfully added Employee 26
+successfully added Employee 27
+successfully added Employee 28
+successfully added Employee 29
+successfully added Employee 30
+successfully added DepartmentManager 31
+successfully added DepartmentManager 32
+successfully added DepartmentManager 33
+successfully added DepartmentManager 34
+successfully added DepartmentManager 35
+successfully added Booking 1
+successfully added Booking 2
+successfully added Booking 3
+successfully added Booking 4
+successfully added Booking 5
+successfully added Booking 6
+successfully added Booking 7
+successfully added Booking 8
+successfully added Booking 9
+successfully added Booking 10
+successfully added Booking 11
+successfully added Booking 12
+failed to remove StandardRoom StandardRoom1
+failed to remove StandardRoom StandardRoom3
+successfully removed StandardRoom StandardRoom15
+successfully removed SuperiorRoom SuperiorRoom7
+successfully removed SuperiorRoom SuperiorRoom19
+failed to remove SuperiorRoom SuperiorRoom21
+successfully removed Suite Suite9
+successfully removed Suite Suite13
+successfully removed Suite Suite25
+successfully removed Customer 19
+successfully removed Customer 8
+successfully removed Customer 10
+successfully removed VIPCustomer 11
+successfully removed VIPCustomer 14
+failed to remove VIPCustomer 50
+successfully removed Employee 23
+successfully removed Booking 1
+successfully removed Booking 5
+failed to remove Booking 18
+successfully removed Booking 7
+successfully removed Booking 11
+successfully removed Booking 3
+
+Customers And Bookings
+
+
+Customer12
+
+
+No Bookings
+
+
+Customer13
+
+
+No Bookings
+
+
+Customer15
+
+
+No Bookings
+
+
+Customer16
+
+
+VIPCustomer Person [id=16, firstName=Shadi, lastName=Ganaem, phoneNumber=54893265, area=JudeaAndSamaria, gender=F, yearOfBirth=1984]dateOfJoining=Sat Dec 02 00:00:00 IST 2017, allBookings=[Booking [bookingNumber=10, roomNumber=StandardRoom33, customer id=16, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=1, totalRevenue=445.0]]] discountPercentage=0.2]
+
+
+Customer17
+
+
+No Bookings
+
+
+Customer18
+
+
+No Bookings
+
+
+Customer1
+
+
+Customer Person [id=1, firstName=Ahmed, lastName=Abom, phoneNumber=54893265, area=Jerusalem, gender=M, yearOfBirth=1992]dateOfJoining=Sat Mar 20 00:00:00 IST 2021, allBookings=[Booking [bookingNumber=12, roomNumber=Suite12, customer id=1, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=7, totalRevenue=3647.0], Booking [bookingNumber=9, roomNumber=StandardRoom48, customer id=1, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=2, totalRevenue=926.0]]]
+
+
+Customer2
+
+
+Customer Person [id=2, firstName=Hasan, lastName=Abom, phoneNumber=54893265, area=Northern, gender=F, yearOfBirth=1986]dateOfJoining=Sat Jul 25 00:00:00 IDT 2020, allBookings=[Booking [bookingNumber=2, roomNumber=SuperiorRoom6, customer id=2, checkInDate=Tue Feb 01 00:00:00 IST 2022, numberOfDays=2, totalRevenue=840.0]]]
+
+
+Customer3
+
+
+No Bookings
+
+
+Customer4
+
+
+Customer Person [id=4, firstName=Eyad, lastName=Cantor       , phoneNumber=54893265, area=JudeaAndSamaria, gender=M, yearOfBirth=2003]dateOfJoining=Fri Sep 20 00:00:00 IDT 2019, allBookings=[Booking [bookingNumber=4, roomNumber=StandardRoom48, customer id=4, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=1, totalRevenue=463.0]]]
+
+
+Customer5
+
+
+No Bookings
+
+
+Customer6
+
+
+Customer Person [id=6, firstName=Ilan, lastName=Abom, phoneNumber=54893265, area=Jerusalem, gender=F, yearOfBirth=1996]dateOfJoining=Wed Sep 20 00:00:00 IDT 2017, allBookings=[Booking [bookingNumber=6, roomNumber=StandardRoom15, customer id=6, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=2, totalRevenue=740.0]]]
+
+
+Customer7
+
+
+No Bookings
+
+
+Customer9
+
+
+No Bookings
+
+
+Customer20
+
+
+No Bookings
+
+
+VIPCustomer12
+
+
+No Bookings
+
+
+VIPCustomer13
+
+
+No Bookings
+
+
+VIPCustomer15
+
+
+No Bookings
+
+
+VIPCustomer16
+
+
+Booking [bookingNumber=10, roomNumber=StandardRoom33, customer id=16, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=1, totalRevenue=445.0]
+
+
+VIPCustomer17
+
+
+No Bookings
+
+
+VIPCustomer18
+
+
+No Bookings
+
+
+VIPCustomer1
+
+
+Booking [bookingNumber=12, roomNumber=Suite12, customer id=1, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=7, totalRevenue=3647.0]
+Booking [bookingNumber=9, roomNumber=StandardRoom48, customer id=1, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=2, totalRevenue=926.0]
+
+
+VIPCustomer2
+
+
+Booking [bookingNumber=2, roomNumber=SuperiorRoom6, customer id=2, checkInDate=Tue Feb 01 00:00:00 IST 2022, numberOfDays=2, totalRevenue=840.0]
+
+
+VIPCustomer3
+
+
+No Bookings
+
+
+VIPCustomer4
+
+
+Booking [bookingNumber=4, roomNumber=StandardRoom48, customer id=4, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=1, totalRevenue=463.0]
+
+
+VIPCustomer5
+
+
+No Bookings
+
+
+VIPCustomer6
+
+
+Booking [bookingNumber=6, roomNumber=StandardRoom15, customer id=6, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=2, totalRevenue=740.0]
+
+
+VIPCustomer7
+
+
+No Bookings
+
+
+VIPCustomer9
+
+
+No Bookings
+
+
+VIPCustomer20
+
+
+No Bookings
+
+
+
+Departments And Employee
+
+
+Department1
+
+
+Employee [id 26 salary=4100.0, department=Department [departmentId=1, specialization=Finance], startOfWork=2006]
+Employee [id 21 salary=4500.0, department=Department [departmentId=1, specialization=Finance], startOfWork=2023]
+Employee [id 31 salary=6000.0, department=Department [departmentId=1, specialization=Finance], startOfWork=2002] DepartmentManager [bonus=1500.0]
+
+
+Department2
+
+
+Employee [id 27 salary=5400.0, department=Department [departmentId=2, specialization=Advertisement], startOfWork=2017]
+Employee [id 22 salary=5000.0, department=Department [departmentId=2, specialization=Advertisement], startOfWork=2022]
+Employee [id 32 salary=6200.0, department=Department [departmentId=2, specialization=Advertisement], startOfWork=2007] DepartmentManager [bonus=1700.0]
+
+
+Department3
+
+
+Employee [id 33 salary=4700.0, department=Department [departmentId=3, specialization=Logistics], startOfWork=1999] DepartmentManager [bonus=1300.0]
+Employee [id 28 salary=5600.0, department=Department [departmentId=3, specialization=Logistics], startOfWork=2007]
+
+
+Department4
+
+
+Employee [id 24 salary=3600.0, department=Department [departmentId=4, specialization=Administration], startOfWork=2018]
+Employee [id 29 salary=5900.0, department=Department [departmentId=4, specialization=Administration], startOfWork=2010]
+Employee [id 34 salary=6000.0, department=Department [departmentId=4, specialization=Administration], startOfWork=1990] DepartmentManager [bonus=1600.0]
+
+
+Department5
+
+
+Employee [id 35 salary=5800.0, department=Department [departmentId=5, specialization=costumerService], startOfWork=1997] DepartmentManager [bonus=1200.0]
+Employee [id 25 salary=4700.0, department=Department [departmentId=5, specialization=costumerService], startOfWork=2016]
+Employee [id 30 salary=4780.0, department=Department [departmentId=5, specialization=costumerService], startOfWork=2013]
+
+
+
+Top 5 Employees
+
+
+Employee [id 21 salary=4500.0, department=Department [departmentId=1, specialization=Finance], startOfWork=2023]
+Employee [id 22 salary=5000.0, department=Department [departmentId=2, specialization=Advertisement], startOfWork=2022]
+Employee [id 24 salary=3600.0, department=Department [departmentId=4, specialization=Administration], startOfWork=2018]
+Employee [id 25 salary=4700.0, department=Department [departmentId=5, specialization=costumerService], startOfWork=2016]
+Employee [id 26 salary=4100.0, department=Department [departmentId=1, specialization=Finance], startOfWork=2006]
+
+Top 3 Employees
+
+
+Employee [id 21 salary=4500.0, department=Department [departmentId=1, specialization=Finance], startOfWork=2023]
+Employee [id 22 salary=5000.0, department=Department [departmentId=2, specialization=Advertisement], startOfWork=2022]
+Employee [id 24 salary=3600.0, department=Department [departmentId=4, specialization=Administration], startOfWork=2018]
+
+all Customers By PK
+
+
+Customer Person [id=1, firstName=Ahmed, lastName=Abom, phoneNumber=54893265, area=Jerusalem, gender=M, yearOfBirth=1992]dateOfJoining=Sat Mar 20 00:00:00 IST 2021, allBookings=[Booking [bookingNumber=12, roomNumber=Suite12, customer id=1, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=7, totalRevenue=3647.0], Booking [bookingNumber=9, roomNumber=StandardRoom48, customer id=1, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=2, totalRevenue=926.0]]]
+Customer Person [id=2, firstName=Hasan, lastName=Abom, phoneNumber=54893265, area=Northern, gender=F, yearOfBirth=1986]dateOfJoining=Sat Jul 25 00:00:00 IDT 2020, allBookings=[Booking [bookingNumber=2, roomNumber=SuperiorRoom6, customer id=2, checkInDate=Tue Feb 01 00:00:00 IST 2022, numberOfDays=2, totalRevenue=840.0]]]
+Customer Person [id=3, firstName=Alaa, lastName=Ganaem, phoneNumber=54893265, area=Jerusalem, gender=M, yearOfBirth=2002]dateOfJoining=Wed Oct 10 00:00:00 IDT 2018, allBookings=[]]
+Customer Person [id=4, firstName=Eyad, lastName=Cantor       , phoneNumber=54893265, area=JudeaAndSamaria, gender=M, yearOfBirth=2003]dateOfJoining=Fri Sep 20 00:00:00 IDT 2019, allBookings=[Booking [bookingNumber=4, roomNumber=StandardRoom48, customer id=4, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=1, totalRevenue=463.0]]]
+Customer Person [id=5, firstName=David, lastName=Abom, phoneNumber=54893265, area=Northern, gender=F, yearOfBirth=1997]dateOfJoining=Sat Nov 27 00:00:00 IST 2021, allBookings=[]]
+Customer Person [id=6, firstName=Ilan, lastName=Abom, phoneNumber=54893265, area=Jerusalem, gender=F, yearOfBirth=1996]dateOfJoining=Wed Sep 20 00:00:00 IDT 2017, allBookings=[Booking [bookingNumber=6, roomNumber=StandardRoom15, customer id=6, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=2, totalRevenue=740.0]]]
+Customer Person [id=7, firstName=Ron, lastName=Ganaem, phoneNumber=54893265, area=TelAviv, gender=M, yearOfBirth=1977]dateOfJoining=Mon Dec 20 00:00:00 IST 2021, allBookings=[]]
+Customer Person [id=9, firstName=Soher, lastName=Abom, phoneNumber=54893265, area=TelAviv, gender=M, yearOfBirth=1982]dateOfJoining=Wed Sep 01 00:00:00 IDT 2021, allBookings=[]]
+VIPCustomer Person [id=12, firstName=Ali, lastName=Ganaem, phoneNumber=54893265, area=JudeaAndSamaria, gender=M, yearOfBirth=2001]dateOfJoining=Thu Oct 19 00:00:00 IDT 2017, allBookings=[]] discountPercentage=0.15]
+VIPCustomer Person [id=13, firstName=Idan, lastName=Abom, phoneNumber=54893265, area=Haifa, gender=M, yearOfBirth=1996]dateOfJoining=Sat Sep 12 00:00:00 IDT 2020, allBookings=[]] discountPercentage=0.1]
+VIPCustomer Person [id=15, firstName=Hasan, lastName=Abom, phoneNumber=54893265, area=Haifa, gender=F, yearOfBirth=2000]dateOfJoining=Mon Jul 19 00:00:00 IDT 2021, allBookings=[]] discountPercentage=0.05]
+VIPCustomer Person [id=16, firstName=Shadi, lastName=Ganaem, phoneNumber=54893265, area=JudeaAndSamaria, gender=F, yearOfBirth=1984]dateOfJoining=Sat Dec 02 00:00:00 IST 2017, allBookings=[Booking [bookingNumber=10, roomNumber=StandardRoom33, customer id=16, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=1, totalRevenue=445.0]]] discountPercentage=0.2]
+VIPCustomer Person [id=17, firstName=Seba, lastName=Abom, phoneNumber=54893265, area=Southern, gender=F, yearOfBirth=1979]dateOfJoining=Tue Jun 05 00:00:00 IDT 2018, allBookings=[]] discountPercentage=0.1]
+VIPCustomer Person [id=18, firstName=Mohammed, lastName=Ganaem, phoneNumber=54893265, area=Haifa, gender=M, yearOfBirth=1993]dateOfJoining=Sun Aug 15 00:00:00 IDT 2021, allBookings=[]] discountPercentage=0.3]
+VIPCustomer Person [id=20, firstName=Adan, lastName=Ganaem, phoneNumber=54893265, area=Southern, gender=M, yearOfBirth=1999]dateOfJoining=Sat Sep 07 00:00:00 IDT 2019, allBookings=[]] discountPercentage=0.2]
+
+all Booking By Revenue
+
+
+Booking [bookingNumber=8, roomNumber=Suite11, customer id=8, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=6, totalRevenue=4734.0]
+Booking [bookingNumber=12, roomNumber=Suite12, customer id=1, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=7, totalRevenue=3647.0]
+Booking [bookingNumber=9, roomNumber=StandardRoom48, customer id=1, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=2, totalRevenue=926.0]
+Booking [bookingNumber=2, roomNumber=SuperiorRoom6, customer id=2, checkInDate=Tue Feb 01 00:00:00 IST 2022, numberOfDays=2, totalRevenue=840.0]
+Booking [bookingNumber=6, roomNumber=StandardRoom15, customer id=6, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=2, totalRevenue=740.0]
+Booking [bookingNumber=4, roomNumber=StandardRoom48, customer id=4, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=1, totalRevenue=463.0]
+Booking [bookingNumber=10, roomNumber=StandardRoom33, customer id=16, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=1, totalRevenue=445.0]
+
+all Customers By number of Booking
+
+
+Customer Person [id=9, firstName=Soher, lastName=Abom, phoneNumber=54893265, area=TelAviv, gender=M, yearOfBirth=1982]dateOfJoining=Wed Sep 01 00:00:00 IDT 2021, allBookings=[]]
+VIPCustomer Person [id=17, firstName=Seba, lastName=Abom, phoneNumber=54893265, area=Southern, gender=F, yearOfBirth=1979]dateOfJoining=Tue Jun 05 00:00:00 IDT 2018, allBookings=[]] discountPercentage=0.1]
+Customer Person [id=7, firstName=Ron, lastName=Ganaem, phoneNumber=54893265, area=TelAviv, gender=M, yearOfBirth=1977]dateOfJoining=Mon Dec 20 00:00:00 IST 2021, allBookings=[]]
+VIPCustomer Person [id=18, firstName=Mohammed, lastName=Ganaem, phoneNumber=54893265, area=Haifa, gender=M, yearOfBirth=1993]dateOfJoining=Sun Aug 15 00:00:00 IDT 2021, allBookings=[]] discountPercentage=0.3]
+VIPCustomer Person [id=13, firstName=Idan, lastName=Abom, phoneNumber=54893265, area=Haifa, gender=M, yearOfBirth=1996]dateOfJoining=Sat Sep 12 00:00:00 IDT 2020, allBookings=[]] discountPercentage=0.1]
+VIPCustomer Person [id=15, firstName=Hasan, lastName=Abom, phoneNumber=54893265, area=Haifa, gender=F, yearOfBirth=2000]dateOfJoining=Mon Jul 19 00:00:00 IDT 2021, allBookings=[]] discountPercentage=0.05]
+Customer Person [id=5, firstName=David, lastName=Abom, phoneNumber=54893265, area=Northern, gender=F, yearOfBirth=1997]dateOfJoining=Sat Nov 27 00:00:00 IST 2021, allBookings=[]]
+VIPCustomer Person [id=12, firstName=Ali, lastName=Ganaem, phoneNumber=54893265, area=JudeaAndSamaria, gender=M, yearOfBirth=2001]dateOfJoining=Thu Oct 19 00:00:00 IDT 2017, allBookings=[]] discountPercentage=0.15]
+Customer Person [id=3, firstName=Alaa, lastName=Ganaem, phoneNumber=54893265, area=Jerusalem, gender=M, yearOfBirth=2002]dateOfJoining=Wed Oct 10 00:00:00 IDT 2018, allBookings=[]]
+VIPCustomer Person [id=20, firstName=Adan, lastName=Ganaem, phoneNumber=54893265, area=Southern, gender=M, yearOfBirth=1999]dateOfJoining=Sat Sep 07 00:00:00 IDT 2019, allBookings=[]] discountPercentage=0.2]
+VIPCustomer Person [id=16, firstName=Shadi, lastName=Ganaem, phoneNumber=54893265, area=JudeaAndSamaria, gender=F, yearOfBirth=1984]dateOfJoining=Sat Dec 02 00:00:00 IST 2017, allBookings=[Booking [bookingNumber=10, roomNumber=StandardRoom33, customer id=16, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=1, totalRevenue=445.0]]] discountPercentage=0.2]
+Customer Person [id=6, firstName=Ilan, lastName=Abom, phoneNumber=54893265, area=Jerusalem, gender=F, yearOfBirth=1996]dateOfJoining=Wed Sep 20 00:00:00 IDT 2017, allBookings=[Booking [bookingNumber=6, roomNumber=StandardRoom15, customer id=6, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=2, totalRevenue=740.0]]]
+Customer Person [id=2, firstName=Hasan, lastName=Abom, phoneNumber=54893265, area=Northern, gender=F, yearOfBirth=1986]dateOfJoining=Sat Jul 25 00:00:00 IDT 2020, allBookings=[Booking [bookingNumber=2, roomNumber=SuperiorRoom6, customer id=2, checkInDate=Tue Feb 01 00:00:00 IST 2022, numberOfDays=2, totalRevenue=840.0]]]
+Customer Person [id=4, firstName=Eyad, lastName=Cantor       , phoneNumber=54893265, area=JudeaAndSamaria, gender=M, yearOfBirth=2003]dateOfJoining=Fri Sep 20 00:00:00 IDT 2019, allBookings=[Booking [bookingNumber=4, roomNumber=StandardRoom48, customer id=4, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=1, totalRevenue=463.0]]]
+Customer Person [id=1, firstName=Ahmed, lastName=Abom, phoneNumber=54893265, area=Jerusalem, gender=M, yearOfBirth=1992]dateOfJoining=Sat Mar 20 00:00:00 IST 2021, allBookings=[Booking [bookingNumber=12, roomNumber=Suite12, customer id=1, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=7, totalRevenue=3647.0], Booking [bookingNumber=9, roomNumber=StandardRoom48, customer id=1, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=2, totalRevenue=926.0]]]
+
+The Total Profit with Stream 7370 $
+
+all Bookings Of Customer with ID 1
+
+
+Booking [bookingNumber=12, roomNumber=Suite12, customer id=1, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=7, totalRevenue=3647.0]
+Booking [bookingNumber=9, roomNumber=StandardRoom48, customer id=1, checkInDate=Mon Feb 01 00:00:00 IST 2021, numberOfDays=2, totalRevenue=926.0]
+
+The customer who has booked the most rooms is Ahmed
+
+Top 5 Employees with Stream
+
+
+Employee [id 21 salary=4500.0, department=Department [departmentId=1, specialization=Finance], startOfWork=2023]
+Employee [id 22 salary=5000.0, department=Department [departmentId=2, specialization=Advertisement], startOfWork=2022]
+Employee [id 24 salary=3600.0, department=Department [departmentId=4, specialization=Administration], startOfWork=2018]
+Employee [id 25 salary=4700.0, department=Department [departmentId=5, specialization=costumerService], startOfWork=2016]
+Employee [id 26 salary=4100.0, department=Department [departmentId=1, specialization=Finance], startOfWork=2006]
+
+Top 3 Employees with Stream
+
+
+Employee [id 21 salary=4500.0, department=Department [departmentId=1, specialization=Finance], startOfWork=2023]
+Employee [id 22 salary=5000.0, department=Department [departmentId=2, specialization=Advertisement], startOfWork=2022]
+Employee [id 24 salary=3600.0, department=Department [departmentId=4, specialization=Administration], startOfWork=2018]
+
