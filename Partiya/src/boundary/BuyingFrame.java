@@ -16,7 +16,7 @@ public class BuyingFrame {
 	private JTextField idtf;
 	private JTextField cardnumtf;
 	private JTextField CVVtf;
-	private JTextField alyom;
+	
 
 	/**
 	 * Launch the application.
