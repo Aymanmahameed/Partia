@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="net.sf.jasperreports.JR_CONTAINER"/>
 	<classpathentry kind="con" path="net.sf.jasperreports.JR_DEPENDENCIES_CONTAINER"/>
 	<classpathentry kind="con" path="com.jaspersoft.server.JRS_CONTAINER"/>
-	<classpathentry kind="lib" path="/Partiya/lib/UCanAccess-5.0.1.bin/lib/commons-lang3-3.8.1.jar"/>
-	<classpathentry kind="lib" path="/Partiya/lib/UCanAccess-5.0.1.bin/lib/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="/Partiya/lib/UCanAccess-5.0.1.bin/lib/hsqldb-2.5.0.jar"/>
-	<classpathentry kind="lib" path="/Partiya/lib/UCanAccess-5.0.1.bin/lib/jackcess-3.0.1.jar"/>
 	<classpathentry kind="lib" path="lib/UCanAccess-5.0.1.bin/loader/ucanload.jar"/>
 	<classpathentry kind="lib" path="lib/UCanAccess-5.0.1.bin/ucanaccess-5.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/aiman/git/repository/ManageParty/lib/guava-19.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/aiman/git/repository/ManageParty/lib/jcalendar-1.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/aiman/git/repository/ManageParty/lib/SimTimeSelector_r23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ayman/git/Java/ManageParty/ManageParty/lib/guava-19.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ayman/git/Java/ManageParty/ManageParty/lib/json-simple-2.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ayman/git/Java/ManageParty/ManageParty/lib/SimTimeSelector_r23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ayman/git/Java/ManageParty/ManageParty/lib/jcalendar-1.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

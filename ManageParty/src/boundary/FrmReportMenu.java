@@ -73,8 +73,8 @@ public class FrmReportMenu extends JFrame implements ActionListener {
 			if (dtcDate.getDate() != null) {
 				java.util.Date selectedDate = dtcDate.getDate();
 				java.sql.Date sqlDate = new java.sql.Date(selectedDate.getTime());
-				ConcertLogic.getInstance().compileConcertsByLocationReport(sqlDate, m.getMusician_id())
-						.setVisible(true);
+				/*ConcertLogic.getInstance().compileConcertsByLocationReport(sqlDate, m.getMusician_id())
+						.setVisible(true);*/
 			} else
 				JOptionPane.showMessageDialog(this, "Please enter a date before");
 

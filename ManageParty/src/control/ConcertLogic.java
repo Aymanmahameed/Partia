@@ -18,10 +18,7 @@ import entity.Consts;
 import entity.Musician;
 
 import entity.Consts.Manipulation;
-import net.sf.jasperreports.engine.JRException;
-import net.sf.jasperreports.engine.JasperFillManager;
-import net.sf.jasperreports.engine.JasperPrint;
-import net.sf.jasperreports.swing.JRViewer;
+
 
 public class ConcertLogic {
 	
@@ -39,7 +36,7 @@ private ConcertLogic() {}
         return instance;
     }
 	
-	public JFrame compileCustomerOrdersReport() {
+	/*public JFrame compileCustomerOrdersReport() {
         try {
             Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
             try (Connection conn = DriverManager.getConnection(Consts.CONN_STR)) {
@@ -59,9 +56,9 @@ private ConcertLogic() {}
         }
         
         return null;
-    }
+    }*/
 	
-	public JFrame compileConcertsByLocationReport(Date date, Long Musicianid) {
+	/*public JFrame compileConcertsByLocationReport(Date date, Long Musicianid) {
 		 try {
 	            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
 	            try (Connection conn = DriverManager.getConnection(Consts.CONN_STR)) {
@@ -86,7 +83,7 @@ private ConcertLogic() {}
 	        }
 	        
 	        return null;
-	}
+	}*/
 	
 	public TreeSet<Concert> getConcerts() {
 		TreeSet<Concert> results = new TreeSet<Concert>();
